@@ -1,0 +1,160 @@
+:root {
+    --main-red: #e50914;
+    --main-black: #141414;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+#page-wrapper {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr;
+    font-family: sans-serif, Geneva, Tahoma, Verdana;
+    color: #fff;
+    background: var(--main-black);
+    width: 100vw;
+}
+
+#banner-buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.banner-button {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover {
+    transition: color 0.2s ease-in;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#logo {
+    color: var(--main-red);
+    font-size: 36pt;
+    font-weight: bolder;
+}
+
+a:visited, a:link {
+    transition: color 0.2s ease-in;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: color 0.2s ease-in;
+    color: var(--main-red);
+}
+
+main {
+    grid-area: main;
+    width: 100vw;
+}
+
+#banner {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 400px;
+    font-size: 12pt;
+    background-image: radial-gradient(circle at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../assets/badboys-banner.jpg");
+    background-size: cover;
+}
+
+#banner-description {
+    margin: 20px;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    width: 40%;
+    text-align: justify;
+}
+
+#banner-title {
+    font-size: 24pt;
+    font-weight: bolder;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    overflow-x: scroll;
+    margin: 20px 0;
+}
+
+.item {
+    width: 155px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: var(--main-black);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #232323;
+}
+
+@media only screen and (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    nav {
+        column-gap: 20px;
+    }
+
+    #banner {
+        min-height: 300px;
+    }
+
+    #banner-title {
+        font-size: 18pt;
+    }
+
+    #banner-description {
+        align-items: center;
+        width: calc(100vw - 50px);
+    }
+} 

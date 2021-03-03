@@ -4,9 +4,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../css/reset.css">
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
   <title>Netflix Clone</title>
 </head>
 <body>
+  <div id="page-wrapper">
+    <header>
+      <h1 id="logo">NETFLIX</h1>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentários</a>
+      </nav>
+    </header>
+      <main>
+        <div id="banner">
+          <div id="banner-description">
+            <h3 id="banner-title">Bad Boys Para Sempre</h3>
+            <p>
+              Armando é um assassino de sangue frio com uma natureza cruel e provocadora.
+              Ele está comprometido com o trabalho do cartel e é enviado por sua mãe para matar Mike (Smith). 
+              Nuñez assumirá o papel de Rita,
+              psicóloga criminal durona e engraçada que é recém-nomeada chefe da AMMO e é ex-namorada de Mike.
+            </p>
+            <div id="banner-buttons">
+              <button class="banner-button" role="button" aria-pressed="false">
+                <i class="fas fa-play"></i>
+                ASSISTIR AGORA
+              </button>
+              <button class="banner-button" role="button" aria-pressed="false">
+                <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <div class="carousel">
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/ava.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/bliss.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/bloodshot.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/fate.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/flash.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/host.jpg">
+            </a>
+            <a href="#"> 
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/jiu-jitsu.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/lucifer.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/ohana.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/riverdale.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/skylines.jpg">
+            </a>
+            <a href="#">
+              <img onmouseover="scaleUp(this)" onmouseout="scaleDown(this)" class="item" src="../assets/vikings.jpg">
+            </a>
+        </div>
+    </main>
+  </div>
+  <script src="https://kit.fontawesome.com/b04215f0d2.js" crossorigin="anonymous"></script>
+  <script src="../script/main.js"></script>
 </body>
 </html> 
